@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Navigation Menu</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="app.js"></script>
+
+		<style type="text/css">
+			.navigation .menu-control {
+				cursor: pointer; }
+				@media only screen and (min-width: 600px) {
+					.navigation .menu-control {
+						display: none; } }
+
+			.navigation > ul {
+				margin: 0;
+				display: none; }
+				.navigation > ul li {
+					position: relative; }
+					.navigation > ul li a {
+						display: inline-block;
+						text-decoration: none;
+						white-space: nowrap; }
+				.navigation > ul ul {
+					display: none;
+					list-style-type: none;
+					margin: 0; }
+					.navigation > ul ul li {
+						float: none;
+						margin: 0;
+						position: relative; }
+				@media only screen and (min-width: 600px) {
+					.navigation > ul {
+						margin: 0;
+						list-style-type: none;
+						display: block; }
+						.navigation > ul:before, .navigation > ul:after {
+							content: " ";
+							display: table; }
+						.navigation > ul:after {
+							clear: both;
+							content: " "; }
+						.navigation > ul > li {
+							float: left; }
+						.no-js .navigation > ul li:hover > ul,
+						.hover-enabled .navigation > ul li:hover > ul {
+							display: block; }
+						.navigation > ul li {
+							position: relative; }
+							.navigation > ul li a {
+								display: inline-block;
+								text-decoration: none;
+								white-space: nowrap; }
+							.navigation > ul li ul {
+								display: none;
+								left: 0;
+								list-style-type: none;
+								margin: 0;
+								position: absolute;
+								top: 100%; }
+								.navigation > ul li ul li {
+									float: none;
+									margin: 0;
+									position: relative; }
+									.no-js .navigation > ul li ul li:hover > ul,
+									.hover-enabled .navigation > ul li ul li:hover > ul {
+										display: inline-block; }
+									.navigation > ul li ul li ul {
+										left: 100%;
+										top: 0; } }
+
+			.no-js .navigation:hover > ul,
+			.hover-enabled .navigation:hover > ul {
+				display: block; }
+		</style>
+	</head>
+	<body>
+		<nav class="navigation" data-navigation>
+			<div class="menu-control">
+				Menu
+			</div>
+			<ul>
+				<li>
+					<a href="#">Item 1</a>
+					<ul>
+						<li>
+							<a href="#">Sub Item 1</a>
+						</li>
+						<li>
+							<a href="#">Sub Item 2</a>
+							<ul>
+								<li>
+									<a href="#">Sub-sub Item 1</a>
+								</li>
+								<li>
+									<a href="#">Sub-sub Item 2</a>
+									<ul>
+										<li>
+											<a href="#">Sub-sub Item 1</a>
+										</li>
+										<li>
+											<a href="#">Sub-sub Item 2</a>
+											<ul>
+												<li>
+													<a href="#">Sub-sub Item 1</a>
+												</li>
+												<li>
+													<a href="#">Sub-sub Item 2</a>
+												</li>
+												<li>
+													<a href="#">Sub-sub Item 3</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Sub-sub Item 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Sub-sub Item 3</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Sub Item 3</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Item 2</a>
+					<ul>
+						<li>
+							<a href="#">Sub Item 1</a>
+						</li>
+						<li>
+							<a href="#">Sub Item 2</a>
+							<ul>
+								<li>
+									<a href="#">Sub-sub Item 1</a>
+								</li>
+								<li>
+									<a href="#">Sub-sub Item 2</a>
+									<ul>
+										<li>
+											<a href="#">Sub-sub Item 1</a>
+										</li>
+										<li>
+											<a href="#">Sub-sub Item 2</a>
+											<ul>
+												<li>
+													<a href="#">Sub-sub Item 1</a>
+												</li>
+												<li>
+													<a href="#">Sub-sub Item 2</a>
+												</li>
+												<li>
+													<a href="#">Sub-sub Item 3</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Sub-sub Item 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Sub-sub Item 3</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Sub Item 3</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Item 3</a>
+					<ul>
+						<li>
+							<a href="#">Sub Item 1</a>
+						</li>
+						<li>
+							<a href="#">Sub Item 2</a>
+							<ul>
+								<li>
+									<a href="#">Sub-sub Item 1</a>
+								</li>
+								<li>
+									<a href="#">Sub-sub Item 2</a>
+									<ul>
+										<li>
+											<a href="#">Sub-sub Item 1</a>
+										</li>
+										<li>
+											<a href="#">Sub-sub Item 2</a>
+											<ul>
+												<li>
+													<a href="#">Sub-sub Item 1</a>
+												</li>
+												<li>
+													<a href="#">Sub-sub Item 2</a>
+												</li>
+												<li>
+													<a href="#">Sub-sub Item 3</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Sub-sub Item 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Sub-sub Item 3</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Sub Item 3</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<script type="text/javascript">
+			$(function () {
+				$('.navigation').navigation();
+			});
+		</script>
+	</body>
+</html>
